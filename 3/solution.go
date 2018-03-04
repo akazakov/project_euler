@@ -12,7 +12,9 @@ func sq(num int64) int64 {
 func is_prime(x int64) bool {
   lim := sq(x)
   for i := int64(2); i <= lim ; i++ {
-    if x % i == 0 return false
+    if x % i == 0 {
+      return false
+    }
   }
   return true
 }
