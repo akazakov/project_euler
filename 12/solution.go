@@ -24,24 +24,9 @@ What is the value of the first triangle number to have over five hundred divisor
 
 import (
   "fmt"
-  "math"
+  "../myutil"
 )
 
-func sq(num int) int {
-  return int(math.Ceil(math.Sqrt(float64(num))))
-}
-
-
-func divisors(n int) []int {
-  factors := make([]int, 0)
-  limt := sq(n)
-  for i := 1; i < limt; i++ {
-    if n % i == 0 {
-      factors = append(factors, i, n / i)
-    }
-  }
-  return factors
-}
 
 func triangular(i int) int {
   return (1 + i)*i/2
@@ -51,7 +36,7 @@ func main() {
   i := 1
   for {
     t := triangular(i)
-    f := divisors(t)
+    f := myutil.Divisors(t)
     fmt.Printf("i: %d, t: %d, d: %d\n", i, t, len(f))
     if (len(f) > 500) {
       break;
