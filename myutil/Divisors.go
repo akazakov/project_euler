@@ -9,9 +9,14 @@ func Sq(num int) int {
 }
 
 func Divisors(n int) []int {
-  factors := make([]int, 0)
+  return append(ProperDivisors(n), n)
+}
+
+func ProperDivisors(n int) []int {
+  factors := make([]int, 1)
+  factors[0] = 1
   limt := Sq(n)
-  for i := 1; i < limt; i++ {
+  for i := 2; i < limt; i++ {
     if n % i == 0 {
       factors = append(factors, i, n / i)
     }
