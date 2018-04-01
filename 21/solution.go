@@ -28,19 +28,10 @@ import (
   "../myutil"
 )
 
-func SumOfDivisors(n int) int {
-  divisors := myutil.ProperDivisors(n)
-  sum := 0
-  for _, v := range divisors {
-    sum += v
-  }
-  return sum
-}
-
 func main() {
   divSum := make(map[int]int)
   for i := 2; i < 10000; i++ {
-    divSum[i] = SumOfDivisors(i)
+    divSum[i] = myutil.SumOfProperDivisors(i)
   }
 
   sumOfAmicable := 0

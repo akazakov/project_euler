@@ -23,3 +23,12 @@ func ProperDivisors(n int) []int {
   }
   return factors
 }
+
+func SumOfProperDivisors(n int) int {
+  divisors := ProperDivisors(n)
+  sum := 0
+  for _, v := range divisors {
+    sum += v
+  }
+  return sum
+}
