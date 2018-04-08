@@ -1,0 +1,30 @@
+ax2 + bx + c = 0
+
+(x - x1)(x - x2) = 0
+x^2 - (x1 + x2)x + x1*x2 = 0
+
+x1 + x2 = -b/a
+x1*x2 = c/a
+x1 = -b/a - x2
+-x2*b/a - x2^2 = -b/a
+
+(x1 + x2)^2 = (x1^x1 + 2x1*x2 + x2^2)
+x1^2 + x^2 = b^2/a^2 - 2c/a
+
+X1^2 + x2^2 = b^2 - 2ac/a^2
+
+(x1 - x2)^2 = (b^2 - 4ac)/a^2
+
+(x1 - x2) = (b^2 - 4ac)^-2/a
+
+x1 + x2 = -b/a
+
+x = (-b +- (b^2 - 4ac)^-2)/ 2a
+
+n^2 + an + b = K
+n^2 + an + (b - K) = 0
+n = (-a +- (a^2 - 4(b-K)^-2)/2
+
+b = prime
+1 + a + b = prime
+a = prime - prime - 1

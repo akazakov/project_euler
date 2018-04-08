@@ -35,3 +35,15 @@ func SumOfProperDivisors(n int) int {
   }
   return sum
 }
+
+func IsPrime(x int) bool {
+  lim := Sq(x)
+  if x == 2 { return true }
+  if x < 2 { return false }
+  for i := 2; i <= lim; i++ {
+    if x % i == 0 {
+      return false
+    }
+  }
+  return true
+}
